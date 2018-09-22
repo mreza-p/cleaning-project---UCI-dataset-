@@ -1,8 +1,8 @@
 library(dplyr) 
-setwd("E:/Programs/R/coursera/UCI HAR Dataset-cleaning-project")
+setwd(".//UCI HAR Dataset-cleaning-project")
 features<-read.table("features.txt")
 activity<-read.table("activity_labels.txt")
-setwd("E:/Programs/R/coursera/UCI HAR Dataset-cleaning-project/train")
+setwd(".//UCI HAR Dataset-cleaning-project/train")
 df_train<-read.table("X_train.txt")
 features<-features[,2] 
 colnames(df_train)=features                   ###naming columns of dataset
@@ -12,7 +12,7 @@ label<-read.table("y_train.txt")
 label<-mutate(label,act=activity[label$V1,2])[2] ###importing corresponding label names
 df_train<-cbind(df_train,label)
 colnames(df_train)[562:563]<-c("subject","activity_name")
-setwd("E:/Programs/R/coursera/UCI HAR Dataset-cleaning-project/test")
+setwd(".//UCI HAR Dataset-cleaning-project/test")
 df_test<-read.table("X_test.txt")
 colnames(df_test)=features
 subject<-read.table("subject_test.txt")
