@@ -1,5 +1,5 @@
 # cleaning-project---UCI-dataset-
-# cleaning-project---UCI-dataset-
+
 First I loaded dplyr package. then directory that includes dataset is set. Then I read features and activity_labels assigned them to feature & activity variables (features<-read.table("features.txt"),activity<-read.table("activity_labels.txt")). 
 Then I set directory to train file for working with it's datasets. I read X_train data named it df_train
 (>> df_train<-read.table("X_train.txt")). features table has two columns of which we need second that is name of variables. so I set the second column of that(>>  features<-features[,2] ). then I named columns of df_train to features variable. (colnames(df_train)=features). then I read subject_train dataset that shows each row's subject (1:30 coded person of that experiment) assigned it to subject variable (>> subject<-read.table("subject_train.txt")). then I column bind it to the df_train dataset ( >> df_train<-cbind(df_train,subject)). 
@@ -23,4 +23,4 @@ As the assignment needs only mean and std variables, so I wited a code with grep
 "[Mm]ean|[Ss]td|subject|activity_name" arg to names(df) which says only keep columns whose names contain any of 
 ("[Mm]ean","[Ss]td","subject","activity_name").
 Finally for the independant table whicc contains average of variables of grouped based on "subject" and "activity_name".
-So first I grouped df by "subject" and "activity_name" and then send it to summary_all function ( because we need to calculate average of all columns ) and assigned it to df2 variable.(>> df2 <-df %>% group_by(subject,activity_name)%>%summarise_all("mean"))
+So first I grouped df by "subject" and "activity_name" and then send it to summary_all function ( because we need to calculate average of all columns ) and assigned it to df2 variable.(>>df2 <-df %>% group_by(subject,activity_name)%>%summarise_all("mean"))
