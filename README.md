@@ -1,5 +1,5 @@
 # cleaning-project---UCI-dataset-
-
+## How does my code work:
 First I loaded dplyr package. then directory that includes dataset is set. Then I read features and activity_labels assigned them to feature & activity variables (features<-read.table("features.txt"),activity<-read.table("activity_labels.txt")). 
 Then I set directory to train file for working with it's datasets. I read X_train data named it df_train
 (>> df_train<-read.table("X_train.txt")). features table has two columns of which we need second that is name of variables. so I set the second column of that(>>  features<-features[,2] ). then I named columns of df_train to features variable. (colnames(df_train)=features). then I read subject_train dataset that shows each row's subject (1:30 coded person of that experiment) assigned it to subject variable (>> subject<-read.table("subject_train.txt")). then I column bind it to the df_train dataset ( >> df_train<-cbind(df_train,subject)). 
