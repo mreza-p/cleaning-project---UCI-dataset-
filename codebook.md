@@ -57,7 +57,7 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
+tBodyAcc-XYZ The average body accelaration signal along the X axis
 tGravityAcc-XYZ
 tBodyAccJerk-XYZ
 tBodyGyro-XYZ
@@ -116,20 +116,32 @@ finally I created a independant variable for an independent tidy data set with t
 
 ### variables:
 
-[1] "tBodyAcc-mean()-X"                    "tBodyAcc-mean()-Y"                   
- [3] "tBodyAcc-mean()-Z"                    "tBodyAcc-std()-X"                    
- [5] "tBodyAcc-std()-Y"                     "tBodyAcc-std()-Z"                    
- [7] "tGravityAcc-mean()-X"                 "tGravityAcc-mean()-Y"                
- [9] "tGravityAcc-mean()-Z"                 "tGravityAcc-std()-X"                 
-[11] "tGravityAcc-std()-Y"                  "tGravityAcc-std()-Z"                 
-[13] "tBodyAccJerk-mean()-X"                "tBodyAccJerk-mean()-Y"               
-[15] "tBodyAccJerk-mean()-Z"                "tBodyAccJerk-std()-X"                
+[1] "tBodyAcc-mean()-X":The average body accelaration signal along the X axis                    
+ [2]"tBodyAcc-mean()-Y"                   
+ [3] "tBodyAcc-mean()-Z"                    
+[4] "tBodyAcc-std()-X" :The standard deviation of the body accelaration signal along the X axis                    
+ [5] "tBodyAcc-std()-Y"                    
+ [6]"tBodyAcc-std()-Z"                    
+ [7] "tGravityAcc-mean()-X":The average gravity accelaration signal along the X axis                 
+ [8]"tGravityAcc-mean()-Y"                
+ [9] "tGravityAcc-mean()-Z"                 
+ [10]"tGravityAcc-std()-X" :The standard deviation of the gravity accelaration signal along the X axis                
+[11] "tGravityAcc-std()-Y"                  
+[12]"tGravityAcc-std()-Z"                 
+[13] "tBodyAccJerk-mean()-X"  :The average body jerk accelaration signal along the X axis              
+[14]"tBodyAccJerk-mean()-Y"               
+[15] "tBodyAccJerk-mean()-Z"                
+[16]"tBodyAccJerk-std()-X"    :The standard deviation of the body jerk accelaration signal along the X axis             
 [17] "tBodyAccJerk-std()-Y"                 "tBodyAccJerk-std()-Z"                
-[19] "tBodyGyro-mean()-X"                   "tBodyGyro-mean()-Y"                  
-[21] "tBodyGyro-mean()-Z"                   "tBodyGyro-std()-X"                   
+[19] "tBodyGyro-mean()-X":The average body orientation signal along the X axis                   
+[20]"tBodyGyro-mean()-Y":                  
+[21] "tBodyGyro-mean()-Z"                  
+[22]"tBodyGyro-std()-X" :The standard deviation of the body orientation signal along the X axis                  
 [23] "tBodyGyro-std()-Y"                    "tBodyGyro-std()-Z"                   
-[25] "tBodyGyroJerk-mean()-X"               "tBodyGyroJerk-mean()-Y"              
-[27] "tBodyGyroJerk-mean()-Z"               "tBodyGyroJerk-std()-X"               
+[25] "tBodyGyroJerk-mean()-X" : The average body jerk orientation signal along the X axis              
+[26]"tBodyGyroJerk-mean()-Y"              
+[27] "tBodyGyroJerk-mean()-Z"               
+[28]"tBodyGyroJerk-std()-X"  :The standard deviation of the body jerk orientation signal along the X axis             
 [29] "tBodyGyroJerk-std()-Y"                "tBodyGyroJerk-std()-Z"               
 [31] "tBodyAccMag-mean()"                   "tBodyAccMag-std()"                   
 [33] "tGravityAccMag-mean()"                "tGravityAccMag-std()"                
